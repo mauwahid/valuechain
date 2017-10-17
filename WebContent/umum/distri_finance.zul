@@ -1,0 +1,60 @@
+<groupbox mold="3d" apply="pdf.mandiri.action.umum.DistriFinanceAction">
+<caption label=""></caption>
+<groupbox id="gbox_anchor">
+	<div align="right" >
+	<hbox>
+	<label value="Kanwil" style="font-size:10px"></label>
+	<combobox name="cb_kanwil" id="cb_kanwil" value="" readonly="true" width="90px"></combobox>
+	<label value="Anchor" style="font-size:10px"></label>
+	<combobox name="cb_anchor" id="cb_anchor" value="" readonly="true" width="90px"></combobox>
+	<label value="BUC" style="font-size:10px"></label>
+	<combobox name="cb_buc" id="cb_buc" value="" readonly="true" width="90px"></combobox>
+	<label value="Cabang" style="font-size:10px"></label>
+	<combobox name="cb_area" id="cb_area" value="" readonly="true" width="90px"></combobox>
+	<label value="Value Chain" style="font-size:10px"></label>
+	<combobox name="cb_distributor" id="cb_distributor" value="" readonly="true" width="90px"></combobox>
+	<label value="Status" style="font-size:10px"></label>
+	<combobox name="cb_status" id="cb_status" value="" readonly="true" width="90px"></combobox>
+	<label value="Fasilitas" style="font-size:10px"></label>
+	<textbox name="tb_fasilitas" id="tb_fasilitas" value="" readonly="false"></textbox>
+		<button label="Filter" forward="onClick=onSearch" mold="trendy" style="font-size:10px"/>
+		<button label="Reset" forward="onClick=onRefresh" mold="trendy" style="font-size:10px"/>		
+	</hbox>
+	</div>
+</groupbox>
+<panel>
+	<panelchildren>																
+		<listbox id="list_to_kanwil" visible="true" style="z" mold="paging" checkmark="false" pageSize="15" sizedByContent="false" >
+			<listhead style="">
+					<listheader label="Kanwil" width="7%" style="font-size:10"/>
+				<listheader label="Cabang" maxlength="20" />
+				<listheader label="Anchor" maxlength="25" />
+				<listheader label="Value Chain" maxlength="25" />
+				<listheader label="Fasilitas" maxlength="25" />
+				<listheader label="BUC" width="6%" />
+				<listheader label="Status" width="6%"/>
+				<listheader label="Tanggal" width="8%"/>
+				<listheader label="Limit (Rp)" align="right" width="8%"/>
+				<listheader label="Outstanding (Rp)" align="right" width="8%"/>
+			
+			
+			</listhead>
+			<listfoot>
+				<listfooter label="Total"></listfooter>
+				<listfooter label=""></listfooter>
+				<listfooter label=""></listfooter>
+				<listfooter label=""></listfooter>
+				<listfooter label=""></listfooter>
+				<listfooter label=""></listfooter>
+				<listfooter label=""></listfooter>
+				<listfooter label=""></listfooter>
+				<listfooter label="" id="limit_count" align="right"></listfooter>
+				<listfooter label="" id="outstanding_count" align="right"></listfooter>
+				<listfooter label=""></listfooter>
+			
+			</listfoot>
+		</listbox>
+	</panelchildren>
+</panel>
+ </groupbox>
+ 

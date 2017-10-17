@@ -1,0 +1,40 @@
+<groupbox mold="3d" apply="pdf.mandiri.action.pusat.UploadDataAction">
+<caption label="Upload Data Value Chain"></caption>
+<groupbox id="gbox_anchor">
+	<div align="center" >
+	<vbox width="50%">
+		<grid>
+			<columns>
+			<column></column>
+			<column></column>
+			</columns>
+			<rows>
+				<row>
+					<label value="Download Template"></label>
+					<button label="Download" id="btn_dwn" upload="false"  mold="trendy" forward="onDownloadTemplate"></button>
+				</row>
+				<row>
+					<label value="Pilih File excel 2003"></label>
+					<button label="Pilih" id="btn_upload" upload="true"  mold="trendy" forward="onUpload=onUploadData(event)"></button>
+				</row>
+				<row>
+					<label value="Nama File"></label>
+					<label id="file_name"></label>
+				</row>
+			
+				<row>
+					<label value="Extract Ke DB"></label>
+					<button label="Run" id="btn_ekstrak" forward="onClick=onExtract" mold="trendy"/>
+				</row>
+			</rows>
+		</grid>
+		
+	</vbox>
+	</div>
+</groupbox>
+<panel>
+	<panelchildren>																
+	</panelchildren>
+</panel>
+ </groupbox>
+ 

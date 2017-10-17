@@ -1,0 +1,41 @@
+<groupbox mold="3d" apply="pdf.mandiri.action.kanwil.DataKirimanAction">
+<caption label="Update Data"></caption>
+<groupbox id="gbox_anchor">
+	<div align="right" >
+	<hbox>
+		<label value="Anchor"></label>
+		<combobox name="cb_anchor" id="cb_anchor" value="" readonly="true"></combobox>
+		<label value="BUC"></label>
+		<combobox name="cb_buc" id="cb_buc" value="" readonly="true"></combobox>
+		<label value="Cabang"></label>
+		<combobox name="cb_area" id="cb_area" value="" readonly="true"></combobox>
+		<label value="Value Chain"></label>
+		<combobox name="cb_distributor" id="cb_distributor" value="" readonly="true"></combobox>
+		<label value="Status"></label>
+		<combobox name="cb_status" id="cb_status" value="" readonly="true"></combobox>
+		<label value="Fasilitas"></label>
+		<textbox name="tb_fasilitas" id="tb_fasilitas" value="" readonly="false"></textbox>
+		<button label="Filter" forward="onClick=onSearch" mold="trendy"/>
+		<button label="Reset" forward="onClick=onRefresh" mold="trendy"/>		
+	</hbox>
+	</div>
+</groupbox>
+<panel>
+	<panelchildren>																
+		<listbox id="list_to_kanwil" visible="true" style="z" mold="paging" pageSize="15" sizedByContent="false"  >
+			<listhead>
+				<listheader label="Anchor" maxlength="20"/>
+				<listheader label="Distributor" maxlength="24"/>
+				<listheader label="BUC" width="6%"/>
+				<listheader label="Cabang" maxlength="25"/>
+				<listheader label="Fasilitas"/>
+				<listheader label="Status" maxlength="25"/>
+				<listheader label="Tanggal"/>
+				<listheader label="Keterangan"/>
+				<listheader label="" width="6%"/>	
+			</listhead>
+			</listbox>
+	</panelchildren>
+</panel>
+ </groupbox>
+ 

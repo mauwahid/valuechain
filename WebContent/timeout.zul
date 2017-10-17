@@ -1,0 +1,9 @@
+<zscript>
+<![CDATA[
+		 			
+         Executions.forward("index.zul");
+	
+]]>
+		
+	
+</zscript>
